@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+
+
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <title>sneic.com</title>
+</head>
+
+<body>
+
+
+
+  <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+    <a class="text-gray-500">
+      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+        viewBox="0 0 24 24">
+        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+      </svg>
+    </a>
+    <a class="ml-3 text-gray-500">
+      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+        viewBox="0 0 24 24">
+        <path
+          d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+        </path>
+      </svg>
+    </a>
+    <a class="ml-3 text-gray-500">
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        class="w-5 h-5" viewBox="0 0 24 24">
+        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+      </svg>
+    </a>
+    <a class="ml-3 text-gray-500">
+      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+        class="w-5 h-5" viewBox="0 0 24 24">
+        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+        </path>
+        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+      </svg>
+    </a>
+  </span>
+
+
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <!-- <img src="/img/logo.png" alt="" class="bgimg"> -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+        <span class="ml-3 text-xl">sneic.com</span>
+      </a>
+      <nav
+        class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a href="http://127.0.0.1:5500/index.html  " class="mr-5 hover:text-gray-900">Home</a>
+        <a href="/admission/all_courses.html " class="mr-5 hover:text-gray-900">Admission 2021 </a>
+        <a href="" class="mr-5 hover:text-gray-900">Exams</a>
+        <a href="   " class="mr-5 hover:text-gray-900">Results</a>
+        <a href="   " class="mr-5 hover:text-gray-900">Top Courses</a>
+        <a href="  " class="mr-5 hover:text-gray-900">Top Colleges</a>
+        <a href="/site_data/news.html  " class="mr-5 hover:text-gray-900">News</a>
+        <a href="/detail.php" class="mr-5 hover:text-gray-900">About</a>
+        <a href="site_data/contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+      </nav>
+      <!-- <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <a href="/register.php"> SignUp</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>  -->
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <a href="/detail.php"> SignUp</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <!-- <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+          </div> -->
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <!-- <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div> -->
+            <!-- <img src="/img/logo.png" alt=""> -->
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2"> <a href="/admission/enng.html">BE/B-TECH </a>
+            </h2>
+
+
+            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
+          </div>
+        </div>
+
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <!-- <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div> -->
+            <!-- <img src="./img/logo.png" alt=""> -->
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2"> <a href="">MBA </a></h2>
+
+            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
+          </div>
+        </div>
+
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <!-- <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div> -->
+            <!-- <img src="./img/logo.png" alt=""> -->
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2"> <a href="">MBBS </a></h2>
+
+            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
+          </div>
+        </div>
+
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <!-- <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div> -->
+            <!-- <img src="./img/logo.png" alt=""> -->
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2"> <a href="">SCIENCE </a></h2>
+
+            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
+          </div>
+        </div>
+
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <!-- <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div> -->
+            <!-- <img src="./img/logo.png" alt=""> -->
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2"><a href=""> ARCHITECTURE </a></h2>
+
+            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
+          </div>
+        </div>
+
+
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <!-- <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div> -->
+            <!-- <img src="./img/logo.png" alt=""> -->
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2"> <a href="">LAW </a></h2>
+
+            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
+          </div>
+        </div>
+
+
+
+        <!-- <div class="xl:w-1/3 md:w-1/2 p-4"> -->
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <!-- <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div> -->
+            <!-- <img src="./img/logo.png" alt=""> -->
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2"><a href="">MANAGMENT </a></h2>
+
+            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
+          </div>
+        </div>
+
+
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <!-- <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                            </svg>
+                        </div> -->
+            <!-- 
+                <img src="./img/logo.png" alt=""> -->
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2"> <a href="">COMMERCE </a></h2>
+            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
+          </div>
+        </div>
+
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <!-- <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div> -->
+            <!-- <img src="./img/logo.png" alt=""> -->
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2"> <a href="">PHARMACY </a></h2>
+            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
+          </div>
+        </div>
+
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <!-- <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                            </svg>
+                        </div> -->
+            <!-- <img src="./img/logo.png" alt=""> -->
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2"> <a href="admission/all_courses.html">SEE ALL
+                BRANCHES </a></h2>
+            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- 
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                        <div class="border border-gray-200 p-6 rounded-lg">
+                            <div
+                                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bunker</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art
+                                8-bit waist co, subway
+                                tile poke farm.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                        <div class="border border-gray-200 p-6 rounded-lg">
+                            <div
+                                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Ramona Falls
+                            </h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art
+                                8-bit waist co, subway
+                                tile poke farm.</p>
+                        </div>
+                    </div>
+                </div> -->
+        <!-- <button
+                    class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">SEE ALL BRANCES</button>  -->
+      </div>
+  </section>
+
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">sneic.com</h2>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Top Universities by NIRF</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">The National Institutional Ranking Framework (NIRF) was
+          approved by the MHRD and launched by Honourable Minister of Human Resource Development on 29th September 2015.
+
+          This framework outlines a methodology to rank institutions across the country. The methodology draws from the
+          overall recommendations broad understanding arrived at by a Core Committee set up by MHRD, to identify the
+          broad parameters for ranking various universities and institutions. The parameters broadly cover “Teaching,
+          Learning and Resources,” “Research and Professional Practices,” “Graduation Outcomes,” “Outreach and
+          Inclusivity,” and “Perception”.</p>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base"><a href="https://www.nirfindia.org/Home "> Official
+            Website of NIRF</a></p>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Indian Institute of Science</h2>
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Rank 2021 - 1</h2>
+          <p class="leading-relaxed text-base mb-4">Bengaluru (Karnataka)</p>
+
+          <a class="text-indigo-500 inline-flex items-center"> <a href="https://www.iisc.ac.in/">Official Website</a>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Jawaharlal Nehru University</h2>
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Rank 2021 - 2</h2>
+          <p class="leading-relaxed text-base mb-4">New Delhi (Delhi)</p>
+          <a class="text-indigo-500 inline-flex items-center"> <a href="http://www.jnu.ac.in/main/ "> Official
+              Website</a>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Banaras Hindu University</h2>
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Rank 2021 - 3</h2>
+          <p class="leading-relaxed text-base mb-4">Varanasi (Uttar Pradesh)</p>
+          <a href="https://www.bhu.ac.in/" class="text-indigo-500 inline-flex items-center"> Official Website
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"> Calcutta University</h2>
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Rank 2021 - 4</h2>
+          <p class="leading-relaxed text-base mb-4"> Kolkata ( West Bengal )</p>
+          <a href="https://www.caluniv.ac.in/" class="text-indigo-500 inline-flex items-center"> Official Website
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <a href="/rank/top universities.pdf"> See 2021 Ranking PDF 1 to 100</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <a href="rank/university rank 2021 -101 to 150.pdf"> See 2021 Ranking PDF 101 to 150</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a
+          href="https://www.nirfindia.org/2021/Ranking.html"> See All Universities Rank here</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Top 10 General Universities (Overall)
+        </h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">This servey conducted by India
+          today. We have mentioned it here for your information only. We do not conduct any kind of servey </p>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <!-- <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div> -->
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Jawaharlal Nehru University</h2>
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Rank 2020 - 1</h2>
+            <p class="leading-relaxed text-base">New Delhi ( Delhi )</p>
+            <a href="http://www.jnu.ac.in/main/" class="mt-3 text-indigo-500 inline-flex items-center">Official Website
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <!-- <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                </svg>
+              </div> -->
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">University Of Hydrabad </h2>
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3"> Rank 2020 - 2 </h2>
+            <p class="leading-relaxed text-base">Hyderabad ( Telangana )</p>
+            <a href=" https://uohyd.ac.in/" class="mt-3 text-indigo-500 inline-flex items-center">Official Website
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <!-- <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div> -->
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Aligarh Muslim University</h2>
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Rank 2020 - 3</h2>
+            <p class="leading-relaxed text-base">Aligarh ( Uttar Pradesh)</p>
+            <a href="https://www.amu.ac.in/" class="mt-3 text-indigo-500 inline-flex items-center">Official Website
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a
+          href="/rank/top 10 general university india today 2020.pdf"> See Top 10 Universities' Rank here</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+      </button>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a
+          href="/rank/top 10 general university private india today 2020.pdf"> See Top 10 Private Universities' Rank
+          here</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a
+          href="/rank/top 10 gov. university india today 2020.pdf"> See Top 10 Goverment Universities' Rank here</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+    </div>
+  </section>
+
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Raw Denim Heirloom Man Braid</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Blue bottle crucifix vinyl
+          post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.
+        </p>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div
+            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Shooting Stars</h2>
+            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+              taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div
+            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-10 h-10" viewBox="0 0 24 24">
+              <circle cx="6" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">The Catalyzer</h2>
+            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+              taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div
+            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Neptune</h2>
+            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+              taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+    </div>
+  </section>
+
+
+
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Top Engineering Exams</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">JEE Main</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">JEE Advanced</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">WBJEE</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">KCET</a>
+            </li>
+
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">MHT-CET</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">GUJCET</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">UPSEE</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">EAMCET</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">BITSAT</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Top Medical Exams</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">NEET</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">AIIMS</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">JIPMER</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">UPSEE</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">GCET</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">IPU CET</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">BCECE</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Top Architecture Exams</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">JEE Main</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">JEE Advanced</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">GATE</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">VITEEE</a>
+            </li>
+
+
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">KEAM</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">WBJEE</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">NATA</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">HITSEEE</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Top Agriculture Exams</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">XAT</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">KEAM</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">AP EAPCET</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">KCET</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">BCECE</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">BHU UET</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">OUAT</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">ICAR AIEEA</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"> UG Entrance Exams</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Engineering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Medical</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Management</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Science</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Law</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Pharmacy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Art</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Commerce</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Education</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Architecture</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Design</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Agriculture</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-200">
+      <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+        <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+          <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+            <label for="footer-field" class="leading-7 text-sm text-gray-600">Placeholder</label>
+            <input type="text" id="footer-field" name="footer-field"
+              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <button
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+          <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">Bitters chicharrones
+            fanny pack
+            <br class="lg:block hidden">waistcoat green juice
+          </p>
+        </div>
+        <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+              </path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2021—sneic.pvt.ltd.All rights reserved
+          <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" target="_blank"
+            rel="noopener noreferrer"></a>
+        </p>
+        <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Any
+          copyright issue ? <span> <a href="./site_data/contact.html">contact us </span></span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
